@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>directive</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- v-once -->
+        <!-- <p>{{ message }}</p>
+        <button v-once:click="clickHandler">Click</button> -->
+
+        <!-- v-pre -->
+        <!-- <p v-pre>{{ message }}</p> -->
+
+        <!-- v-html -->
+        <!-- <p>{{ message }}</p>
+        <p v-html="message"></p>
+        <p v-html="userInput"></p>
+        <input type="text" v-model="userInput"> -->
+
+        <!-- v-cloak -->
+        <!-- <p v-cloak>{{ message }}</p> -->
+
+        <!-- v-text -->
+        <h2>Mustache</h2>
+        <p>{{ message }}</p>
+
+        <h2>v-text</h2>
+        <p v-text="message"></p>
+    </div>
+    
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

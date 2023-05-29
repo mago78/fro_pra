@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- <div>
+            <p>{{ message }}</p>
+            <input type="text" v-model="message" value="hogehoge">
+            <pre>{{ $data }}</pre>
+
+            <textarea>{{ message }}</textarea>
+            <textarea v-model="message"></textarea>
+        </div> -->
+
+        <!-- <div>
+            <label for="checkbox">{{ checked }}</label>
+            <input type="checkbox" id="checkbox" v-model="checked">
+
+            <label for="red">Red</label>
+            <input type="checkbox" id="red" value="red" v-model="colors">
+            <label for="blue">Blue</label>
+            <input type="checkbox" id="blue" value="blue" v-model="colors">
+        </div> -->
+
+        <!-- <div>
+            <input type="radio" id="tokyo" value="tokyo" v-model="pref">
+            <label for="tokyo">Tokyo</label>
+            <input type="radio" id="osaka" value="osaka" v-model="pref">
+            <label for="osaka">Osaka</label>
+            <p>{{ pref }}</p>
+        </div> -->
+
+        <div>
+            <!-- <select v-model="selected">
+                <option disabled value="">please select</option>
+                <option>Red</option>
+                <option>Blue</option>
+            </select>
+            <p>{{ selected }}</p> -->
+
+            <!-- <select v-model="selected" multiple>
+                <option>Red</option>
+                <option>Blue</option>
+            </select>
+            <p>{{ selected }}</p> -->
+        </div>
+
+        <div>
+            <!-- <input type="text" v-model.lazy="message">
+            <p>{{ message }}</p> -->
+
+            <!-- <input type="text" v-model.trim="message"><br>
+            <input type="text" v-model="message">
+            <pre>{{ $data }}</pre> -->
+
+            <input type="number" v-model.number="age">
+            {{ age + 10 }}
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
