@@ -1,0 +1,21 @@
+header{
+    margin: 30px;
+    color: #2e99a9;
+}
+
+hr.bar{
+    height: 3px;
+    background-color: #2e99a9;
+    border: none;
+    margin: 30px 0;
+}
+
+h1{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.form-group>label{
+    font-weight: bold;
+}

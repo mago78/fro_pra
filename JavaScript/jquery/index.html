@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Ajax</title>
+</head>
+<body>
+    <header>
+        <h1>My photo</h1>
+    </header>
+
+    <div class="container">
+        <div id="img_unit">
+
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        //$('#img_unit').html('ここに画像が表示される').css('margin-top', '100px');
+        $.getJSON('https://h2o-space.com/htmlbook/images.php', function(data){
+            for(var i=0; i<data.length; i++){
+                $('<div class="photo"></div>')
+                    .append('<img src="'+ data[i].path +'">')
+                    .append('<div class="inner"><p>' + data[i].caption + '<span>' + data[i].name + '</span></p></div>')
+                    .appendTo('#img_unit');
+            }
+        });
+    </script>
+</body>
+</html>
